@@ -1,0 +1,148 @@
+section#product {
+  margin-left: 20.1rem;
+}
+
+section#product .container {
+  text-align: center;
+}
+
+section#product header h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  border-bottom: 1px solid white;
+  background-color: #5982a8;
+  padding: 10.7px;
+  margin-bottom: 5px;
+}
+
+section#product .product {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  justify-content: center;
+}
+
+section#product .operate {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.btn-search:hover
+{
+  background-color: #9082a8;
+  color: white;
+  cursor: pointer;
+}
+
+section#product input {
+  border: 1px solid #5982a8;
+  font-size: 15px;
+  padding: 8px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  margin-right: 2px;
+}
+
+section#product .operate-search .btn-search {
+  border: 1px solid #5982a8;
+  font-size: 15px;
+  padding: 8px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  cursor: pointer;
+}
+
+section#product .operate-add .btn-add {
+  border: 1px solid #5982a8;
+  font-size: 15px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 2rem;
+  color: black;
+}
+
+section#product .card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+section#product .card img {
+  width: 100%;
+  height: auto;
+}
+section#product .card:hover
+{
+  cursor: pointer;
+}
+section#product .card img:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+
+section#product .card-content {
+  padding: 20px;
+}
+
+section#product .card-content h3 {
+  margin-top: 0;
+}
+
+section#product .card-content p {
+  margin-bottom: 20px;
+}
+
+section#product .card-content .btn-edit {
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+section#product .card-content .btn-edit:hover {
+  background-color: #0056b3;
+}
+
+section#product .product .card .card-content .btn-edit {
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 1rem;
+}
+section#product .product .card .card-content .btn-edit:hover
+{
+  cursor: pointer;
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+section#product .product .card .card-content .operator-card
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+section#product .product .card .card-content .operator-card .btn-delete
+{
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 1rem;
+  background-color: #007bff;
+  color: white;
+}
+section#product .product .card .card-content .operator-card .btn-delete:hover
+{
+  cursor: pointer;
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+
+

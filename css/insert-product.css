@@ -1,0 +1,62 @@
+section
+{
+    margin-left: 20.1rem;
+}
+
+.insert-container {
+    width: 800px;
+    margin: 100px auto 100px auto;
+    padding: 40px;
+    background-color: #dddddd;
+    border-top-left-radius: 3.5rem;
+    border-bottom-right-radius: 3.5rem;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.insert-container header
+{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(65, 130, 210);
+}
+.insert-form label
+{
+    font-size: 17px;
+    color: rgb(65, 130, 210);
+    margin-bottom: 5px;
+}
+.insert-form input[type="text"],
+.insert-form input[type="password"],
+.insert-form input[type="number"],
+.insert-form input[type="file"]
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(65, 130, 210);
+    border-radius: 5rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: rgb(65, 130, 210);
+}
+.insert-form .btn
+{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5rem;
+    box-sizing: border-box;
+    border: 1px solid rgb(65, 130, 210);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(65, 130, 210);
+}
+.insert-form .btn:hover
+{
+    background-color: rgb(65, 130, 210);
+    color: white;
+    cursor: pointer;
+}
