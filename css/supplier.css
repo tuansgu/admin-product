@@ -1,0 +1,107 @@
+section#supplier {
+    margin-left: 20.1rem;
+  }
+  
+  section#supplier .container {
+    text-align: center;
+  }
+  
+  section#supplier header h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    border-bottom: 1px solid white;
+    background-color: #5982a8;
+    padding: 10.7px;
+    margin-bottom: 5px;
+  }
+  
+  section#supplier .supplier {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    justify-content: center;
+  }
+  
+  section#supplier .operate {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .btn-search:hover {
+    background-color: #9082a8;
+    color: white;
+    cursor: pointer;
+  }
+  
+  section#supplier input {
+    border: 1px solid #5982a8;
+    font-size: 15px;
+    padding: 8px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    margin-right: 2px;
+  }
+  
+  section#supplier .operate-search .btn-search {
+    border: 1px solid #5982a8;
+    font-size: 15px;
+    padding: 8px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  section#supplier .operate-add .btn-add {
+    border: 1px solid #5982a8;
+    font-size: 15px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 2rem;
+    color: black;
+  }
+  
+  /* CSS cho bảng */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* CSS cho các dòng */
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* CSS cho cột tiêu đề */
+  th {
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* CSS cho ô dữ liệu */
+  td {
+    padding: 15px;
+  }
+  
+  /* CSS cho hàng xen kẽ */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* CSS cho hover */
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  .btn-edit {
+    padding: 7px;
+    border: 1px solid #5982a8;
+    border-radius: 3rem;
+    color: black;
+  }

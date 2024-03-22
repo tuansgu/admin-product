@@ -3,7 +3,7 @@ section
     margin-left: 20.1rem;
 }
 
-.insert-container {
+.update-container {
     width: 800px;
     margin: 100px auto 100px auto;
     padding: 40px;
@@ -15,7 +15,7 @@ section
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.insert-container header
+.update-container header
 {
     text-align: center;
     margin-bottom: 20px;
@@ -23,16 +23,15 @@ section
     font-weight: bold;
     color: rgb(65, 130, 210);
 }
-.insert-form label
+.update-form label
 {
     font-size: 17px;
     color: rgb(65, 130, 210);
     margin-bottom: 5px;
 }
-.insert-form input[type="text"],
-.insert-form input[type="password"],
-.insert-form input[type="number"],
-.insert-form input[type="file"]
+.update-form input[type="text"],
+.update-form input[type="password"],
+.update-form input[type="email"]
 {
     width: 100%;
     padding: 10px;
@@ -42,7 +41,7 @@ section
     margin-bottom: 10px;
     color: rgb(65, 130, 210);
 }
-.insert-form .btn
+.update-form .btn
 {
     width: 100%;
     margin-top: 10px;
@@ -54,9 +53,24 @@ section
     font-size: 17px;
     color: rgb(65, 130, 210);
 }
-.insert-form .btn:hover
+.update-form .btn:hover
 {
     background-color: rgb(65, 130, 210);
     color: white;
     cursor: pointer;
+}
+.select-role
+{
+    margin-left: 10px;
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 2rem;
+    color: rgb(65, 130, 210);
+}
+span
+{
+    margin-left: 5px;
+    color: rgb(65, 130, 210);
+    font-size: 17px;
+    margin-bottom: 10px;
 }

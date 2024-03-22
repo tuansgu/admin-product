@@ -3,7 +3,7 @@ section
     margin-left: 20.1rem;
 }
 
-.update-container {
+.insert-container {
     width: 800px;
     margin: 100px auto 100px auto;
     padding: 40px;
@@ -15,7 +15,7 @@ section
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.update-container header
+.insert-container header
 {
     text-align: center;
     margin-bottom: 20px;
@@ -23,16 +23,16 @@ section
     font-weight: bold;
     color: rgb(65, 130, 210);
 }
-.update-form label
+.insert-form label
 {
     font-size: 17px;
     color: rgb(65, 130, 210);
     margin-bottom: 5px;
 }
-.update-form input[type="text"],
-.update-form input[type="password"],
-.update-form input[type="number"],
-.update-form input[type="file"]
+.insert-form input[type="text"],
+.insert-form input[type="password"],
+.insert-form input[type="number"],
+.insert-form input[type="file"]
 {
     width: 100%;
     padding: 10px;
@@ -42,7 +42,7 @@ section
     margin-bottom: 10px;
     color: rgb(65, 130, 210);
 }
-.update-form .btn
+.insert-form .btn
 {
     width: 100%;
     margin-top: 10px;
@@ -54,7 +54,7 @@ section
     font-size: 17px;
     color: rgb(65, 130, 210);
 }
-.update-form .btn:hover
+.insert-form .btn:hover
 {
     background-color: rgb(65, 130, 210);
     color: white;
@@ -66,4 +66,6 @@ section
     font-size: 17px;
     padding: 7px;
     border-radius: 2rem;
+    margin-bottom: 10px;
+    color: rgb(65, 130, 210);
 }

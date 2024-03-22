@@ -10,7 +10,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/home-admin.css">
+        <link rel="stylesheet" href="css/home-admin1.css">
         <title>Admin</title>
     </head>
 
@@ -28,14 +28,14 @@
                 <ul>
                     <li><a href="product.php#product">Product</a></li>
                     <li><a href="customer.php#customer">Customer</a></li>
-                    <li><a>Employee</a></li>
-                    <li><a>Suplier</a></li>
-                    <li><a>Import & Export</a></li>
+                    <li><a href="employee.php#employee">Employee</a></li>
+                    <li><a href="supplier.php#supplier">Supplier</a></li>
+                    <li><a>Order</a></li>
                     <li><a>Dashboard</a></li>
                 </ul>
                 <div>
                     <button class="btn">
-                        Log Out
+                        <a class= "logout" href="login.php">Log Out</a>
                     </button>
                 </div>
             </aside>

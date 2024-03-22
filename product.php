@@ -1,7 +1,7 @@
 <?php
 include("home-admin.php");
 ?>
-<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/product1.css">
 <section id="product" class="product">
     <div class="container">
         <header>
@@ -15,6 +15,7 @@ include("home-admin.php");
         </div>
         <div class="operate-add">
             <a class="btn-add" href="insert-product.php#insert-product">Insert Product</a>
+            <a class="btn-add" href="insert-product.php#insert-category">Insert Category</a>
         </div>
     </div>
     <div class="product">
@@ -26,12 +27,12 @@ include("home-admin.php");
         <div class="card">
             <img src="upload/<?php echo $product['image']; ?>" width="100" alt="Card image">
             <div class="card-content">
-                <h3>Name: <?php echo $product['name']?></h3>
-                <p>Price: <?php echo $product['price']?>$</p>
+                <h3><?php echo $product['name']?></h3>
+                <p><?php echo $product['price']?>$</p>
                 <div class="operator-card">
                 <a class="btn-edit" href="update-product.php?id=<?php echo $product['id']?>">Update</a>
                 <form>
-                    <button class="btn-delete" >Delete</button>
+                    <button class="btn-detail" >Detail</button>
                 </form>
                 </div>
             </div>

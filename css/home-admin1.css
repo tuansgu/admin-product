@@ -59,6 +59,10 @@ a
 li:hover{
     background-color: rgb(60, 132, 60);
 }
+li.clicked
+{
+    background-color: rgb(60, 132, 60);
+}
 .btn
 {
     padding: 10px;
@@ -74,4 +78,7 @@ li:hover{
     background-color: red;
     color: white;
     
+}
+.btn .logout {
+    color: black;
 }

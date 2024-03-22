@@ -1,31 +1,31 @@
 <?php 
     include("home-admin.php");
 ?>
-<link rel="stylesheet" href="css/insert-customer.css">
-<section id="insert-customer" class="insert-customer">
+<link rel="stylesheet" href="css/insert-employee.css">
+<section id="insert-employee" class="insert-employee">
 <div class="insert-container">
         <header>
-            <h3>INSERT CUSTOMER</h3>
+            <h3>INSERT EMPLOYEE</h3>
             <h6>By <?php echo $_SESSION['employee_name']?></h6>
         </header>
-        <form class="insert-form" action="insert-customer.php" method="post" >
-            <label>Customer Name</label>
+        <form class="insert-form" action="insert-employee.php" method="post" >
+            <label>Employee Name</label>
             <br>
             <input type="text" name="name" required>
             <br>
-            <label>Customer Address</label>
+            <label>Employee Address</label>
             <br>
             <input type="text" name="address" required>
             <br>
-            <label>Customer Email</label>
+            <label>Employee Email</label>
             <br>
             <input type="email" name="email" required>
             <br>
-            <label>Customer Password</label>
+            <label>Employee Password</label>
             <br>
             <input type="text" name="password" required>
             <br>
-            <label>Customer Role</label>
+            <label>Employee Role</label>
             <select name="role" class="select-role">
                 <?php 
                     $sql = "SELECT * FROM role";
@@ -44,7 +44,7 @@
                 ?>
             </select>
             <br>
-            <button type="submit" value="add-customer" name="submit" class="btn">Add Customer</button>
+            <button type="submit" value="add-employee" name="submit" class="btn">Add employee</button>
         </form>
     </div>
 </section>

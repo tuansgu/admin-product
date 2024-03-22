@@ -1,13 +1,13 @@
 <?php
 if (isset($_POST['submit'])) {
-    if ($_POST['submit'] == "add-customer") {
-        add_customer();
-    } else if ($_POST['submit'] == "edit-customer") {
-        edit_customer();
+    if ($_POST['submit'] == "add-employee") {
+        add_employee();
+    } else if ($_POST['submit'] == "edit-employee") {
+        edit_employee();
     }
 }
 
-function add_customer()
+function add_employee()
 {
     global $conn;
     $name = $_POST['name'];
@@ -20,7 +20,7 @@ function add_customer()
     $sql = "SELECT * FROM account WHERE email = '$email'";
     $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) > 0) {
-        echo "<script>alert('That email is taken. Try another.'); document.location.href='insert-customer.php';</script>";
+        echo "<script>alert('That email is taken. Try another.'); document.location.href='insert-employee.php';</script>";
         return; // Dừng hàm nếu email đã tồn tại
     }
 
@@ -38,19 +38,19 @@ function add_customer()
         // Lấy account_id mới thêm vào
         $account_id = mysqli_insert_id($conn);
 
-        // Thêm khách hàng vào bảng customer
-        $sql_customer = "INSERT INTO customer (customer_id, customer_name, customer_address, account_id) VALUES('', '$name', '$address', '$account_id')";
-        $result = mysqli_query($conn, $sql_customer);
+        // Thêm khách hàng vào bảng employee
+        $sql_employee = "INSERT INTO employee (employee_id, employee_name, employee_address, account_id) VALUES('', '$name', '$address', '$account_id')";
+        $result = mysqli_query($conn, $sql_employee);
 
-        echo "<script>alert('Customer Added Successfully') document.location.href='customer.php';;</script>";
+        echo "<script>alert('employee Added Successfully') document.location.href='employee.php';;</script>";
     } else {
         echo "Failured!";
     }
 }
-function edit_customer()
+function edit_employee()
 {
     global $conn;
-    $id = $_POST['id_customer'];
+    $id = $_POST['id'];
     $name = $_POST['name'];
     $address = $_POST['address'];
     $email = $_POST['email'];
@@ -59,8 +59,8 @@ function edit_customer()
 
     // Check if email has changed
 
-    $customer = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM customer WHERE customer_id = $id"));
-    $account_id = $customer['account_id'];
+    $employee = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM employee WHERE employee_id = $id"));
+    $account_id = $employee['account_id'];
     $sql_email_current = "SELECT email FROM account WHERE account_id = $account_id";
     $result_email_current = mysqli_query($conn, $sql_email_current);
     $row = mysqli_fetch_assoc($result_email_current);
@@ -70,7 +70,7 @@ function edit_customer()
         $sql_check_email = "SELECT * FROM account WHERE email = '$email'";
         $result_check_email = mysqli_query($conn, $sql_check_email);
         if (mysqli_num_rows($result_check_email) > 0) {
-            echo "<script>alert('That email is taken. Try another.'); document.location.href='update-customer.php?id-customer=$id';</script>";
+            echo "<script>alert('That email is taken. Try another.'); document.location.href='update-employee.php?id-employee=$id';</script>";
             return;
         }
     }
@@ -81,12 +81,12 @@ function edit_customer()
         $row_check_role = mysqli_fetch_assoc($result_check_role);
         $role_id = $row_check_role['role_id'];
 
-        // Update customer
-        $sql_update_customer = "UPDATE customer SET customer_name = '$name', customer_address = '$address' WHERE customer_id = $id";
-        $result_update_customer = mysqli_query($conn, $sql_update_customer);
+        // Update employee
+        $sql_update_employee = "UPDATE employee SET employee_name = '$name', employee_address = '$address' WHERE employee_id = $id";
+        $result_update_employee = mysqli_query($conn, $sql_update_employee);
 
         //get account_id
-        $sql_account_id = "SELECT * FROM customer WHERE customer_id = $id";
+        $sql_account_id = "SELECT * FROM employee WHERE employee_id = $id";
         $result = mysqli_query($conn, $sql_account_id);
         if (mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_assoc($result);
@@ -96,8 +96,8 @@ function edit_customer()
         $sql_update_account = "UPDATE account SET email = '$email', password= '$password', role_id = '$role_id' WHERE account_id = $account_id";
         $result_update_account = mysqli_query($conn, $sql_update_account);
 
-        if ($result_update_customer && $result_update_account) {
-            echo "<script>alert('Customer Updated Successfully')</script>";
+        if ($result_update_employee && $result_update_account) {
+            echo "<script>alert('Employee Updated Successfully')</script>";
         } else {
             echo "Update failed!";
         }

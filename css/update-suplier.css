@@ -8,13 +8,9 @@ section
     margin: 100px auto 100px auto;
     padding: 40px;
     background-color: #dddddd;
-    border-top-left-radius: 3.5rem;
-    border-bottom-right-radius: 3.5rem;
-    border-top-right-radius: 0rem;
-    border-bottom-left-radius: 0rem;
+    border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .update-container header
 {
     text-align: center;
@@ -27,25 +23,22 @@ section
 {
     font-size: 17px;
     color: rgb(65, 130, 210);
-    margin-bottom: 5px;
 }
 .update-form input[type="text"],
-.update-form input[type="password"],
-.update-form input[type="number"],
-.update-form input[type="file"]
+.update-form input[type="email"]
 {
     width: 100%;
     padding: 10px;
     border: 1px solid rgb(65, 130, 210);
     border-radius: 5rem;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: rgb(65, 130, 210);
 }
 .update-form .btn
 {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 5rem;
     box-sizing: border-box;
     border: 1px solid rgb(65, 130, 210);
@@ -60,10 +53,38 @@ section
     color: white;
     cursor: pointer;
 }
-.select-category
+.select-brand
 {
     margin-left: 10px;
     font-size: 17px;
     padding: 7px;
     border-radius: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.input_date_start, .input_date_end
+{
+    font-size: 17px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 2rem;
+}
+.input_date_start
+{
+    margin-left: 5px;
+}   
+.input_date_end
+{
+    margin-left: 12px;
+}
+.lb_end
+{
+    margin: auto;
+}
+.contract_date
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
 }

@@ -14,7 +14,6 @@
             <h6>By Admin</h6>
         </header>
         <form class="update-form" action="" method="post" enctype="multipart/form-data">
-            <?php echo $id ?>;
             <label>Tên Sản Phẩm</label>
             <br>
             <input type="text" name="name" value="<?php echo $product['name']?>">

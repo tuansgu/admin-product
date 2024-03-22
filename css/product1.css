@@ -130,7 +130,7 @@ section#product .product .card .card-content .operator-card
   justify-content: space-around;
   margin: auto;
 }
-section#product .product .card .card-content .operator-card .btn-delete
+section#product .product .card .card-content .operator-card .btn-detail
 {
   padding: 10px;
   font-size: 17px;
@@ -138,7 +138,7 @@ section#product .product .card .card-content .operator-card .btn-delete
   background-color: #007bff;
   color: white;
 }
-section#product .product .card .card-content .operator-card .btn-delete:hover
+section#product .product .card .card-content .operator-card .btn-detail:hover
 {
   cursor: pointer;
   transform: scale(1.1); 
